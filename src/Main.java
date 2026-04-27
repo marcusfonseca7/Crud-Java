@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        CadastroPessoa cad = new CadastroPessoa();
         int opcao = 1;
 
         while (opcao == 1) {
@@ -16,6 +17,9 @@ public class Main {
         int telefone = sc.nextInt();
 
         Pessoa pessoa = new Pessoa(nome, idade, telefone);
+        cad.adicionarPessoa(pessoa);
+
+        cad.lerPessoas();
 
         System.out.println("Opcão: ");
         opcao = sc.nextInt();

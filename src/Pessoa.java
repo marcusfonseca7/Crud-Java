@@ -9,4 +9,10 @@ public class Pessoa {
         this.idade = idade;
         this.telefone = telefone;
     }
+
+    @Override
+    public String toString() {
+        return "Nome: " + nome + "| Idade: " + idade + "| Número: " + telefone;
+    }
+
 }
