@@ -9,11 +9,4 @@ public class Pessoa {
         this.idade = idade;
         this.telefone = telefone;
     }
-
-
-    public void exibir() {
-        System.out.println(nome);
-        System.out.println(idade);
-        System.out.println(telefone);
-    }
 }

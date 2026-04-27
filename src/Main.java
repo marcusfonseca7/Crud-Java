@@ -16,12 +16,10 @@ public class Main {
         int telefone = sc.nextInt();
 
         Pessoa pessoa = new Pessoa(nome, idade, telefone);
-        pessoa.exibir();
 
         System.out.println("Opcão: ");
         opcao = sc.nextInt();
         sc.nextLine();
         }
-
     }
 }
