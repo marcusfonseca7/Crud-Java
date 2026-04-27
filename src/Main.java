@@ -19,11 +19,11 @@ public class Main {
         Pessoa pessoa = new Pessoa(nome, idade, telefone);
         cad.adicionarPessoa(pessoa);
 
-        cad.lerPessoas();
-
         System.out.println("Opcão: ");
         opcao = sc.nextInt();
         sc.nextLine();
         }
+
+        cad.lerPessoas();
     }
 }
