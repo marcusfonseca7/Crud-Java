@@ -6,24 +6,40 @@ public class Main {
         CadastroPessoa cad = new CadastroPessoa();
         int opcao = 1;
 
-        while (opcao == 1) {
-        System.out.println("Digite seu nome: ");
-        String nome = sc.nextLine();
+        do {
+            System.out.println("╔════════════════════════════╗\n" +
+                               "║       CRUD DE USUÁRIOS     ║\n" +
+                               "╠════════════════════════════╣\n" +
+                               "║   1- Adicionar Usuário     ║\n" +
+                               "║   2- Listar Usuários       ║\n" +
+                               "║   3- Editar Usuário        ║\n" +
+                               "║   4- Deletar Usuário       ║\n" +
+                               "║   5- Sair                  ║\n" +
+                               "╚════════════════════════════╝");
+            int opcaoMenu = sc.nextInt();
 
-        System.out.println("Digite sua idade: ");
-        int idade = sc.nextInt();
+            switch (opcaoMenu) {
 
-        System.out.println("Digite seu telefone: ");
-        int telefone = sc.nextInt();
+                case 1:
+                    cad.adicionarPessoa();
+                    break;
 
-        Pessoa pessoa = new Pessoa(nome, idade, telefone);
-        cad.adicionarPessoa(pessoa);
+                case 2:
+                    cad.lerPessoas();
+                    break;
 
-        System.out.println("Opcão: ");
-        opcao = sc.nextInt();
-        sc.nextLine();
-        }
+                case 3:
+                    cad.editarPessoa();
+                    break;
 
-        cad.lerPessoas();
+                case 4:
+                    cad.deletarPessoa();
+                    break;
+            }
+
+            System.out.println("Deseja voltar ao menu? 1 - Sim | 2 - Não: ");
+            opcao = sc.nextInt();
+        } while (opcao == 1);
+
     }
 }
