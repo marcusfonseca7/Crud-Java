@@ -13,9 +13,10 @@ public class CadastroPessoa {
 
         System.out.println("Digite sua idade: ");
         int idade = sc.nextInt();
+        sc.nextLine(); //limpeza
 
         System.out.println("Digite seu telefone: ");
-        int telefone = sc.nextInt();
+        String telefone = sc.nextLine();
 
         Pessoa pessoa = new Pessoa(nome, idade, telefone);
 
@@ -60,7 +61,7 @@ public class CadastroPessoa {
 
             case 3:
                 System.out.println("Digite o telefone para substituir: ");
-                int novoTelefone = sc.nextInt();
+                String novoTelefone = sc.nextLine();
                 listaPessoa.get(opcaoEditar - 1).setTelefone(novoTelefone);
                 System.out.println("Telefone Editado com Sucesso!");
                 break;
