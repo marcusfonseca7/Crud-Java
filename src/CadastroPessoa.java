@@ -74,7 +74,13 @@ public class CadastroPessoa {
         contador = 1;
         for (Object pessoa : listaPessoa) {
             System.out.println(contador + " - " + pessoa);
+            contador++;
         }
+        int opcaoDeletar = sc.nextInt();
+        listaPessoa.remove(opcaoDeletar - 1);
+        System.out.println("Usuário Deletado com Sucesso! ");
+
+        sc.nextLine(); // limpar scanner
     }
 
 
