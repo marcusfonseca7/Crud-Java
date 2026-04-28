@@ -36,8 +36,8 @@ Além disso, também utiliza:
 
 ## 📌 Próximos passos
 
-- Implementar estrutura base do CRUD  
-- Aplicar corretamente os pilares da POO  
+- Implementar estrutura base do CRUD
+- Aplicar validações de entrada
 - Melhorar organização do código  
 - Possível integração futura com banco de dados  
 

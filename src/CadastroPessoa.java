@@ -66,7 +66,6 @@ public class CadastroPessoa {
                 break;
         }
 
-
     }
 
     public void deletarPessoa() {
@@ -82,6 +81,5 @@ public class CadastroPessoa {
 
         sc.nextLine(); // limpar scanner
     }
-
 
 }
