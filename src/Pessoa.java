@@ -15,4 +15,12 @@ public class Pessoa {
         return "Nome: " + nome + "| Idade: " + idade + "| Número: " + telefone;
     }
 
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
 }

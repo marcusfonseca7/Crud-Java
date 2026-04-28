@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         CadastroPessoa cad = new CadastroPessoa();
-        int opcao = 1;
+        int opcaoMenu;
 
         do {
             System.out.println("╔════════════════════════════╗\n" +
@@ -16,7 +16,7 @@ public class Main {
                                "║   4- Deletar Usuário       ║\n" +
                                "║   5- Sair                  ║\n" +
                                "╚════════════════════════════╝");
-            int opcaoMenu = sc.nextInt();
+            opcaoMenu = sc.nextInt();
 
             switch (opcaoMenu) {
 
@@ -35,11 +35,11 @@ public class Main {
                 case 4:
                     cad.deletarPessoa();
                     break;
-            }
 
-            System.out.println("Deseja voltar ao menu? 1 - Sim | 2 - Não: ");
-            opcao = sc.nextInt();
-        } while (opcao == 1);
+                case 5:
+                    break;
+            }
+        } while (opcaoMenu != 5);
 
     }
 }

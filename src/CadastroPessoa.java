@@ -17,6 +17,8 @@ public class CadastroPessoa {
         int telefone = sc.nextInt();
 
         Pessoa pessoa = new Pessoa(nome, idade, telefone);
+
+        System.out.println("Usuário cadastrado: " + pessoa.getNome());
         listaPessoa.add(pessoa);
     }
 
